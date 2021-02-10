@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garberas Boutique</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <!-- menu -->
+        <nav class="grid">
+            <img src="img/logo.svg" alt="Logo de garberas boutique">
+            <h1>Gerberas Boutique</h1>
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html">Inicio</a></li>
+                <li role="menuitem"><a href="catalogo.html">Catalogo</a></li>
+                <li role="menuitem"><a href="novedades.html" style="color: #ffffff;" aria-current="page">Novedades</a></li>
+                <li role="menuitem"><a href="ofertas.html">¡Ofertas!</a></li>
+                <li role="menuitem"><a href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+            <div role="menubar" class="topnav" id="myTopnav">
+                <a role="menuitem" href="index.html">Inicio</a>
+                <a role="menuitem" href="catalogo.html">Catalogo</a>
+                <a role="menuitem" href="novedades.html" style="color: #ffffff;" aria-current="page">Novedades</a>
+                <a role="menuitem" href="ofertas.html">¡Ofertas!</a>
+                <a role="menuitem" href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart"></i></a>
+                <a role="menuitem" href="javascript:void(0);" title="menu" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section class="grid">
+            <h1 class="titulo-caja" id="abrigos">Novedades</h1>
+            <figure class="carta-producto" aria-labelledby="producto-1">
+                <img src="img/vestido-4.png" alt="Vestido sin mangas a rayas de color fucsia">
+                <p>Nuevo</p>
+                <figcaption class="carta-texto" id="producto-1">
+                  <h4><b>Vestido Alicia fucsia </b></h4>
+                  <p class="codigo">Codigo: 01-004</p>
+                  <p>¢ 6,000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-2">
+                <img src="img/zapatos-2.png" alt="Botín de color negro de material gamuza">
+                <p>Nuevo</p>
+                <figcaption class="carta-texto" id="producto-2">
+                  <h4><b>Botín Julyeth</b></h4>
+                  <p class="codigo">Codigo: 02-008</p>
+                  <p>¢ 19,000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-3">
+                <img src="img/blusa-6.png" alt="Blusa tipo t-shirt de color rosada">
+                <p>Nuevo</p>
+                <figcaption class="carta-texto" id="producto-3">
+                  <h4><b>Blusa Blosom</b></h4>
+                  <p class="codigo">Codigo: 03-018</p>
+                  <p>¢ 12,000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>  
+            <figure class="carta-producto" aria-labelledby="producto-4">
+                <img src="img/jeans-2.png" alt="Jeans color azul sin rasgados">
+                <p>Nuevo</p>
+                <figcaption class="carta-texto" id="producto-4">
+                  <h4><b>Mom jeans Victoria</b></h4>
+                  <p class="codigo">Codigo: 04-020</p>
+                  <p>¢ 30,000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-5">
+                <img src="img/abrigo-6.png" alt="Blazer color beige con finos botones">
+                <p>Nuevo</p>
+                <figcaption class="carta-texto" id="producto-5">
+                  <h4><b>Blazer Valencia</b></h4>
+                  <p class="codigo">Codigo: 05-030</p>
+                  <p>¢ 18,000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-6">
+                <img src="img/coletas-1.png" alt="Cola para el cabello se puede dividir en dos">
+                <p>Nuevo</p>
+                <figcaption class="carta-texto" id="producto-6">
+                  <h4><b>Coletas </b></h4>
+                  <p class="codigo">Codigo: 06-037</p>
+                  <p>¢ 4,000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="grid">
+        <div class="footer-izquierda">
+            <h1>Menu</h1>
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html">Inicio</a></li>
+                <li role="menuitem"><a href="catalogo.html">Catalogo</a></li>
+                <li role="menuitem"><a href="novedades.html">Novedades</a></li>
+                <li role="menuitem"><a href="ofertas.html">¡Ofertas!</a></li>
+            </ul>
+        </div>
+        <div class="footer-centro">
+            <h1>Contacto</h1>
+            <a href="" title="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="" title="twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="" title="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+            <p>Telefono: 8888-8888</p>
+            <p>Email: ejemplo@email.com</p>
+            <p>Direccion: 100 metros Norte del Banco Nacional de, San José, San Marcos</p>
+        </div>
+        <div class="footer-derecha">
+            <h1>Horario</h1>
+            <p>De Lunes a Sabado <br>9:00 AM a 9:00 PM</p>
+            <br>
+            <p>Domingos <br>9:00 AM a 2:00 PM</p>
+        </div>
+        <div class="copy">
+            <span>© Copyright gerberasboutiquecr.com</span>
+            <span>Designed by</span>
+            <img src="img/logo 1.svg" alt="Logo del desarrollador">
+        </div>
+    </footer>
+<!-- alerts -->
+<script src="js/alertify.js"></script>
+<script src="js/carrito.js"></script>
+<!-- menu -->
+<script src="js/menu.js"></script>
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/192542afc1.js" crossorigin="anonymous"></script>
+</body>
+</html>

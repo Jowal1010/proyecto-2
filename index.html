@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garberas Boutique</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <!-- menu -->
+        <nav class="grid">
+            <img src="img/logo.svg" alt="Logo de garberas boutique">
+            <h1>Gerberas Boutique</h1>
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html" style="color: #ffffff;" aria-current="page">Inicio</a></li>
+                <li role="menuitem"><a href="catalogo.html">Catalogo</a></li>
+                <li role="menuitem"><a href="novedades.html">Novedades</a></li>
+                <li role="menuitem"><a href="ofertas.html">¡Ofertas!</a></li>
+                <li role="menuitem"><a href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+            <div role="menubar" class="topnav" id="myTopnav">
+                <a role="menuitem" href="index.html" style="color: #ffffff;" aria-current="page">Inicio</a>
+                <a role="menuitem" href="catalogo.html">Catalogo</a>
+                <a role="menuitem" href="novedades.html">Novedades</a>
+                <a role="menuitem" href="ofertas.html">¡Ofertas!</a>
+                <a href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart" ></i></a>
+                <a role="menuitem" title="menu" href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <!-- slider -->
+        <div class="container-all">
+            <input type="radio" id="1" name="image-slide" hidden/>
+            <input type="radio" id="2" name="image-slide" hidden/>
+            <input type="radio" id="3" name="image-slide" hidden/>
+            <div class="slide-container">
+                <div class="slide">
+                    <img src="img/slider-1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/slider-2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/slider-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="pagination">  
+                <label class="pagination-item" for="1"></label>   
+                <label class="pagination-item" for="2"></label>   
+                <label class="pagination-item" for="3"></label>   
+            </div>   
+        </div>
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section class="grid" id="section-1">
+            <h1 class="titulo">Categorias</h1>
+            <hr class="linea-titulo lineaDerecha">
+            <hr class="linea-titulo lineaIzquierda">
+            <figure class="opcion-catalogo-izquierda"><a href="catalogo.html#vestidos">
+                <img src="img/catalogo-2.png" alt="Dos bolsos de mano para mujer">
+                <figcaption class="marco">
+                    <h2>Vestidos</h2>
+                </figcaption>
+            </a></figure>
+            <figure class="opcion-catalogo-centro"><a href="catalogo.html#zapatos">
+                <img src="img/catalogo-3.png" alt="Dos bolsos de mano para mujer">
+                <figcaption class="marco">
+                    <h2>Zapatos</h2>
+                </figcaption>
+            </a></figure>
+            <figure class="opcion-catalogo-derecha"><a href="catalogo.html#blusas">
+                <img src="img/catalogo-4.png" alt="Dos bolsos de mano para mujer">
+                <figcaption class="marco">
+                    <h2>Blusas</h2>
+                </figcaption>
+            </a></figure>
+            <figure class="opcion-catalogo-izquierda"><a href="catalogo.html#jeans">
+                <img src="img/catalogo-5.png" alt="Dos bolsos de mano para mujer">
+                <figcaption class="marco">
+                    <h2>Jeans</h2>
+                </figcaption>
+            </a></figure>
+            <figure class="opcion-catalogo-centro"><a href="catalogo.html#abrigos">
+                <img src="img/catalogo-6.png" alt="Dos bolsos de mano para mujer">
+                <figcaption class="marco">
+                    <h2>Abrigos</h2>
+                </figcaption>
+            </a></figure>
+            <figure class="opcion-catalogo-derecha"><a href="catalogo.html#accesorios">
+                <img src="img/catalogo-1.png" alt="Dos bolsos de mano para mujer">
+                <figcaption class="marco">
+                    <h2>Accesorios</h2>
+                </figcaption>
+            </a></figure>
+        </section>
+        <!-- section 2 -->
+        <section class="grid" id="section-2">
+            <h1 class="titulo">Lo Más Popular</h1>
+            <hr class="linea-titulo lineaDerecha">
+            <hr class="linea-titulo lineaIzquierda">
+            <figure class="carta-producto" aria-labelledby="producto-1">
+                <img src="img/blusa-1.png" alt="Bolso de una mano de colo beige">
+                <figcaption class="carta-texto" id="producto-1">
+                  <h4><bold>Blusa muscle top blanca</bold></h4>
+                  <p class="codigo">Codigo: 03-013</p>
+                  <p>¢ 16000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-2">
+                <img src="img/blusa-2.png" alt="Blusa color amarillo corta">
+                <p>-50%</p>
+                <figcaption class="carta-texto" id="producto-2">
+                  <h4><bold>Crop Top amarillo Sara</bold></h4>
+                  <p class="codigo">Codigo: 03-014</p>
+                  <p><i>¢ 16000</i> ¢ 8000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure> 
+            <figure class="carta-producto" aria-labelledby="producto-3">
+                <img src="img/jeans-1.png" alt="Jeans color azul oscuro">
+                <figcaption class="carta-texto" id="producto-3">
+                  <h4><bold>Pantalón jeans azul</bold></h4>
+                  <p class="codigo">Codigo: 04-019</p>
+                  <p>¢ 22900</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure> 
+            <figure class="carta-producto" aria-labelledby="producto-4">
+                <img src="img/abrigo-1.png" alt="abrigo de color azul material de mesclilla">
+                <figcaption class="carta-texto" id="producto-4">
+                  <h4><bold>Jacket Denim </bold></h4>
+                  <p class="codigo">Codigo: 05-025</p>
+                  <p>¢ 23000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-5">
+                <img src="img/bolso-1.png" alt="bolso de mano color Beige">
+                <figcaption class="carta-texto" id="producto-5">
+                  <h4><bold>Bolso Rosalía</bold></h4>
+                  <p class="codigo">Codigo: 06-031</p>
+                  <p>¢ 23500</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure> 
+            <figure class="carta-producto" aria-labelledby="producto-6">
+                <img src="img/zapatos-1.png" alt="Zapatos color nude">
+                <figcaption class="carta-texto" id="producto-6">
+                  <h4><bold>Zapato Luana Nude </bold></h4>
+                  <p class="codigo">Codigo: 02-007</p>
+                  <p>¢ 14000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure> 
+        </section>
+        <!-- section 3 -->
+        <section class="grid" id="section-3">
+            <h1 class="titulo">¿Quieres Adquerir Nuestros Productos?</h1>
+            <hr class="linea-titulo lineaDerecha">
+            <hr class="linea-titulo lineaIzquierda">
+            <div class="fondo grid">
+                <div class="info-izquierda">
+                    <i class="far fa-credit-card"></i>
+                    <p>Aceptamos todo tipo de<br>metodos de pago</p>
+                </div>
+                <div class="info-centro">
+                    <i class="fas fa-truck-moving"></i>
+                    <p>Entregamos nuestros<br>productos en todo el pais</p>
+                </div>
+                <div class="info-derecha">
+                    <i class="fas fa-lock"></i>
+                    <p>Proteccion y garantia<br>en todas las compras</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="grid">
+        <div class="footer-izquierda">
+            <h1>Menu</h1>
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html">Inicio</a></li>
+                <li role="menuitem"><a href="catalogo.html">Catalogo</a></li>
+                <li role="menuitem"><a href="novedades.html">Novedades</a></li>
+                <li role="menuitem"><a href="ofertas.html">¡Ofertas!</a></li>
+            </ul>
+        </div>
+        <div class="footer-centro">
+            <h1>Contacto</h1>
+            <a href="" title="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="" title="twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="" title="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+            <p>Telefono: 8888-8888</p>
+            <p>Email: ejemplo@email.com</p>
+            <p>Direccion: 100 metros Norte del Banco Nacional de, San José, San Marcos</p>
+        </div>
+        <div class="footer-derecha">
+            <h1>Horario</h1>
+            <p>De Lunes a Sabado <br>9:00 AM a 9:00 PM</p>
+            <br>
+            <p>Domingos <br>9:00 AM a 2:00 PM</p>
+        </div>
+        <div class="copy">
+            <span>© Copyright gerberasboutiquecr.com</span>
+            <span>Designed by</span>
+            <img src="img/logo 1.svg" alt="Logo del desarrollador">
+        </div>
+    </footer>
+<!-- alerts -->
+<script src="js/alertify.js"></script>
+<script src="js/carrito.js"></script>
+<!-- menu -->
+<script src="js/menu.js"></script>
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/192542afc1.js" crossorigin="anonymous"></script>
+</body>
+</html>

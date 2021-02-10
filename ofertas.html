@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garberas Boutique</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <!-- menu -->
+        <nav class="grid">
+            <img src="img/logo.svg" alt="Logo de garberas boutique">
+            <h1>Gerberas Boutique</h1>
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html">Inicio</a></li>
+                <li role="menuitem"><a href="catalogo.html">Catalogo</a></li>
+                <li role="menuitem"><a href="novedades.html">Novedades</a></li>
+                <li role="menuitem"><a href="ofertas.html" style="color: #ffffff;" aria-current="page">¡Ofertas!</a></li>
+                <li role="menuitem"><a href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+            <div role="menubar" class="topnav" id="myTopnav">
+                <a role="menuitem" href="index.html">Inicio</a>
+                <a role="menuitem" href="catalogo.html">Catalogo</a>
+                <a role="menuitem" href="novedades.html">Novedades</a>
+                <a role="menuitem" href="ofertas.html" style="color: #ffffff;" aria-current="page">¡Ofertas!</a>
+                <a role="menuitem" href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart"></i></a>
+                <a role="menuitem" href="javascript:void(0);" title="menu" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section class="grid">
+            <h1 class="titulo-caja" id="blusas">Descuentos</h1>
+            <figure class="carta-producto" aria-labelledby="producto-1">
+              <img src="img/blusa-2.png" alt="Blusa color amarillo corta">
+              <p>-50%</p>
+              <figcaption class="carta-texto" id="producto-1">
+                <h4><b>Crop Top amarillo Sara</b></h4>
+                <p class="codigo">Codigo: 03-014</p>
+                <p><i>¢ 16000</i> ¢ 8000</p>
+                <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+              </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-2">
+                <img src="img/vestido-3.png" alt="Vestido de mangas largas con estampados de diseños verdes">
+                <p>-10%</p>
+                <figcaption class="carta-texto" id="producto-2">
+                  <h4><b>Vestido Esmeralda</b></h4>
+                  <p class="codigo">Codigo: 01-003</p>
+                  <p><i>¢ 10000</i> ¢ 9000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-3">
+                <img src="img/zapatos-4.png" alt="Zapato tipo espadriles color negro">
+                <p>-30%</p>
+                <figcaption class="carta-texto" id="producto-3">
+                  <h4><b>Zapatos Espadriles</b></h4>
+                  <p class="codigo">Codigo: 02-010</p>
+                  <p><i>¢ 10000</i> ¢ 7000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-4">
+                <img src="img/jeans-6.png" alt="Jeans marca high rise ajustado al cuerpo y rasgado">
+                <p>-15%</p>
+                <figcaption class="carta-texto" id="producto-4">
+                  <h4><b>Pantalón Jeans high rise</b></h4>
+                  <p class="codigo">Codigo: 04-024</p>
+                  <p><i>¢ 30000</i> ¢ 25500</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-5">
+                <img src="img/abrigo-5.png" alt="Cardigan largo tejido con lana de color verde musgo">
+                <p>-25%</p>
+                <figcaption class="carta-texto" id="producto-5">
+                  <h4><b>Cardigan Bohemia </b></h4>
+                  <p class="codigo">Codigo: 05-029</p>
+                  <p><i>¢ 16000</i> ¢ 12000</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+            <figure class="carta-producto" aria-labelledby="producto-6">
+                <img src="img/gorro-1.png" alt="Gorro de lana color negro con diseño animal print">
+                <p>-20%</p>
+                <figcaption class="carta-texto" id="producto-6">
+                  <h4><b>Beannie Animal print</b></h4>
+                  <p class="codigo">Codigo: 06-035</p>
+                  <p><i>¢ 11000</i> ¢ 8800</p>
+                  <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="grid">
+        <div class="footer-izquierda">
+            <h1>Menu</h1>
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html">Inicio</a></li>
+                <li role="menuitem"><a href="catalogo.html">Catalogo</a></li>
+                <li role="menuitem"><a href="novedades.html">Novedades</a></li>
+                <li role="menuitem"><a href="ofertas.html">¡Ofertas!</a></li>
+            </ul>
+        </div>
+        <div class="footer-centro">
+            <h1>Contacto</h1>
+            <a href="" title="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="" title="twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="" title="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+            <p>Telefono: 8888-8888</p>
+            <p>Email: ejemplo@email.com</p>
+            <p>Direccion: 100 metros Norte del Banco Nacional de, San José, San Marcos</p>
+        </div>
+        <div class="footer-derecha">
+            <h1>Horario</h1>
+            <p>De Lunes a Sabado <br>9:00 AM a 9:00 PM</p>
+            <br>
+            <p>Domingos <br>9:00 AM a 2:00 PM</p>
+        </div>
+        <div class="copy">
+            <span>© Copyright gerberasboutiquecr.com</span>
+            <span>Designed by</span>
+            <img src="img/logo 1.svg" alt="Logo del desarrollador">
+        </div>
+    </footer>
+<!-- alerts -->
+<script src="js/alertify.js"></script>
+<script src="js/carrito.js"></script>
+<!-- menu -->
+<script src="js/menu.js"></script>
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/192542afc1.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerberas Boutique</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header>
+    <!-- menu -->
+    <nav class="grid">
+      <img src="img/logo.svg" alt="Logo de garberas boutique">
+        <h1>Gerberas Boutique</h1>
+        <ul role="menubar">
+            <li role="menuitem"><a href="index.html">Inicio</a></li>
+            <li role="menuitem"><a href="catalogo.html" style="color: #ffffff;" aria-current="page">Catalogo</a></li>
+            <li role="menuitem"><a href="novedades.html">Novedades</a></li>
+            <li role="menuitem"><a href="ofertas.html">¡Ofertas!</a></li>
+            <li role="menuitem"><a href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <div role="menubar" class="topnav" id="myTopnav">
+            <a role="menuitem" href="index.html">Inicio</a>
+            <a role="menuitem" href="catalogo.html" style="color: #ffffff;" aria-current="page">Catalogo</a>
+            <a role="menuitem" href="novedades.html">Novedades</a>
+            <a role="menuitem" href="ofertas.html">¡Ofertas!</a>
+            <a role="menuitem" href="carrito.html" title="carrito de compra"><i class="fas fa-shopping-cart"></i></a>
+            <a role="menuitem" href="javascript:void(0);" title="menu" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <!-- section 1 -->
+    <section class="grid">
+      <h1 class="titulo-caja" id="vestidos">Vestidos</h1>
+      <figure class="carta-producto" aria-labelledby="producto-1">
+        <img src="img/vestido-1.png" alt="Vestido de mangas largas y anchas de color rojo estampado de flores">
+        <figcaption class="carta-texto" id="producto-1">
+          <h4><b>Vestido Valentina </b></h4>
+          <p class="codigo">Codigo: 01-001</p>
+          <p>¢ 25500</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-2">
+        <img src="img/vestido-2.png" alt="Vestido de tirantes color azul con flores estanpadas">
+        <figcaption class="carta-texto" id="producto-2">
+          <h4><b>Vestido Frida </b></h4>
+          <p class="codigo">Codigo: 01-002</p>
+          <p>¢ 24000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-3">
+        <img src="img/vestido-3.png" alt="Vestido de mangas largas con estampados de diseños verdes">
+        <p>-10%</p>
+        <figcaption class="carta-texto" id="producto-3">
+          <h4><b>Vestido Esmeralda </b></h4>
+          <p class="codigo">Codigo: 01-003</p>
+          <p><i>¢ 10000</i> ¢ 9000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-4">
+        <img src="img/vestido-4.png" alt="Vestido sin mangas a rayas de color fucsia">
+        <p>Nuevo</p>
+        <figcaption class="carta-texto" id="producto-4">
+          <h4><b>Vestido Alicia fucsia </b></h4>
+          <p class="codigo">Codigo: 01-004</p>
+          <p>¢ 6000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-5">
+        <img src="img/vestido-5.png" alt="vestido largo con estampado de colores">
+        <figcaption class="carta-texto" id="producto-5">
+          <h4><b>Vestido Zelene</b></h4>
+          <p class="codigo">Codigo: 01-005</p>
+          <p>¢ 12000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-6">
+        <img src="img/vestido-6.png" alt="Vestido largo asimétrico verde agua">
+        <figcaption class="carta-texto" id="producto-6">
+          <h4><b>Vestido asimétrico </b></h4>
+          <p class="codigo">Codigo: 01-006</p>
+          <p>¢ 12000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- section 2 -->
+    <section class="grid">
+      <h1 class="titulo-caja" id="zapatos">Zapatos</h1>
+      <figure class="carta-producto" aria-labelledby="producto-7">
+        <img src="img/zapatos-1.png" alt="Zapatos color nude">
+        <figcaption class="carta-texto" id="producto-7">
+          <h4><b>Zapato Luana Nude </b></h4>
+          <p class="codigo">Codigo: 02-007</p>
+          <p>¢ 14000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-8">
+        <img src="img/zapatos-2.png" alt="Botín de color negro de material gamuza">
+        <p>Nuevo</p>
+        <figcaption class="carta-texto" id="producto-8">
+          <h4><b>Botín Julyeth</b></h4>
+          <p class="codigo">Codigo: 02-008</p>
+          <p>¢ 19000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-9">
+        <img src="img/zapatos-3.png" alt="Botas altas de cuero fino color beige">
+        <figcaption class="carta-texto" id="producto-9">
+          <h4><b>Botas Altas</b></h4>
+          <p class="codigo">Codigo: 02-009</p>
+          <p>¢ 13000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-10">
+        <img src="img/zapatos-4.png" alt="Zapato tipo espadriles color negro">
+        <p>-30%</p>
+        <figcaption class="carta-texto" id="producto-10">
+          <h4><b>Zapatos Espandriles </b></h4>
+          <p class="codigo">Codigo: 02-010</p>
+          <p><i>¢ 10000</i> ¢ 7000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-11">
+        <img src="img/zapatos-5.png" alt="Tennis con aire comprido de color blanco">
+        <figcaption class="carta-texto" id="producto-11">
+          <h4><b>Tennis West</b></h4>
+          <p class="codigo">Codigo: 02-011</p>
+          <p>¢ 25000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-12">
+        <img src="img/zapatos-6.png" alt="Sandalia con detalles tornasol y el tacon transparente">
+        <figcaption class="carta-texto" id="producto-12">
+          <h4>Sandalias Tornasol <b></b></h4>
+          <p class="codigo">Codigo: 02-012</p>
+          <p>¢ 15000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- section 3 -->
+    <section class="grid">
+      <h1 class="titulo-caja" id="blusas">Blusas</h1>
+      <figure class="carta-producto" aria-labelledby="producto-13">
+        <img src="img/blusa-1.png" alt="Bolso de una mano de colo beige">
+        <figcaption class="carta-texto" id="producto-13">
+          <h4><b>Blusa muscle top blanca</b></h4>
+          <p class="codigo">Codigo: 03-013</p>
+          <p>¢ 16000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-14">
+        <img src="img/blusa-2.png" alt="Blusa color amarillo corta">
+        <p>-50%</p>
+        <figcaption class="carta-texto" id="producto-14">
+          <h4><b>Crop Top amarillo Sara</b></h4>
+          <p class="codigo">Codigo: 03-014</p>
+          <p><i>¢ 16000</i> ¢ 8000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-15">
+        <img src="img/blusa-3.png" alt="Blusa tejida de color azul">
+        <figcaption class="carta-texto" id="producto-15">
+          <h4><b>Blusa baby blue</b></h4>
+          <p class="codigo">Codigo: 03-015</p>
+          <p>¢ 16500</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-16">
+        <img src="img/blusa-4.png" alt="Blusa de manga corta con la expalda expuesta">
+        <figcaption class="carta-texto" id="producto-16">
+          <h4><b>Body negro</b></h4>
+          <p class="codigo">Codigo: 03-016</p>
+          <p>¢ 14000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-17">
+        <img src="img/blusa-5.png" alt="Blusa de mangas largas color negro">
+        <figcaption class="carta-texto" id="producto-17">
+          <h4><b>Blusa negra Gloriana</b></h4>
+          <p class="codigo">Codigo: 03-017</p>
+          <p>¢ 8000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-18">
+        <img src="img/blusa-6.png" alt="Blusa tipo t-shirt de color rosada">
+        <p>Nuevo</p>
+        <figcaption class="carta-texto" id="producto-18">
+          <h4><b>Blusa Blosom</b></h4>
+          <p class="codigo">Codigo: 03-018</p>
+          <p>¢ 12000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- section 4 -->
+    <section class="grid">
+      <h1 class="titulo-caja" id="jeans">Jeans</h1>
+      <figure class="carta-producto" aria-labelledby="producto-19">
+        <img src="img/jeans-1.png" alt="Jeans color azul oscuro">
+        <figcaption class="carta-texto" id="producto-19">
+          <h4><b>Pantalón jeans azul</b></h4>
+          <p class="codigo">Codigo: 04-019</p>
+          <p>¢ 22900</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-20">
+        <img src="img/jeans-2.png" alt="Jeans color azul sin rasgados">
+        <p>Nuevo</p>
+        <figcaption class="carta-texto" id="producto-20">
+          <h4><b>Mom jeans Victoria</b></h4>
+          <p class="codigo">Codigo: 04-020</p>
+          <p>¢ 30000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-21">
+        <img src="img/jeans-3.png" alt="Jeans color azul tipo boyfriend">
+        <figcaption class="carta-texto" id="producto-21">
+          <h4><b>Pantalón boyfriend</b></h4>
+          <p class="codigo">Codigo: 04-021</p>
+          <p>¢ 31000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-22">
+        <img src="img/jeans-4.png" alt="Jeans de mezclilla con rasgados marca Just Usa">
+        <figcaption class="carta-texto" id="producto-22">
+          <h4><b>Pantalón Jeans Just Usa</b></h4>
+          <p class="codigo">Codigo: 04-022</p>
+          <p>¢ 32000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-23">
+        <img src="img/jeans-5.png" alt="Pantalón de mezclilla boyfirend corte holgado">
+        <figcaption class="carta-texto" id="producto-23">
+          <h4><b>Pantalón denim boyfriend</b></h4>
+          <p class="codigo">Codigo: 04-023</p>
+          <p>¢ 30000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-24">
+        <img src="img/jeans-6.png" alt="Jeans marca high rise ajustado al cuerpo y rasgado">
+        <p>-15%</p>
+        <figcaption class="carta-texto" id="producto-24">
+          <h4><b>Pantalón Jeans high rise</b></h4>
+          <p class="codigo">Codigo: 04-024</p>
+          <p><i>¢ 30000</i> ¢ 25500</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- section 5 -->
+    <section class="grid">
+      <h1 class="titulo-caja" id="abrigos">Abrigos</h1>
+      <figure class="carta-producto" aria-labelledby="producto-25">
+        <img src="img/abrigo-1.png" alt="abrigo de color azul material de mesclilla">
+        <figcaption class="carta-texto" id="producto-25">
+          <h4><b>Jacket Denim </b></h4>
+          <p class="codigo">Codigo: 05-025</p>
+          <p>¢ 23000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-26">
+        <img src="img/abrigo-2.png" alt="Jacket de mezclilla medium wash color azul con botones metalicos">
+        <figcaption class="carta-texto" id="producto-26">
+          <h4><b>Jacket Debby</b></h4>
+          <p class="codigo">Codigo: 05-026</p>
+          <p>¢ 26000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-27">
+        <img src="img/abrigo-3.png" alt="Jacket de cuero sintetico de color cafe de un solo boton y dos bolsas al frente">
+        <figcaption class="carta-texto" id="producto-27">
+          <h4><b>Jacket Cuerina</b></h4>
+          <p class="codigo">Codigo: 05-027</p>
+          <p>¢ 15000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-28">
+        <img src="img/abrigo-4.png" alt="Suéter tejido de lana ligera de tres colores blanco, rosa, cafe">
+        <figcaption class="carta-texto" id="producto-28">
+          <h4><b>Suérter Cata</b></h4>
+          <p class="codigo">Codigo: 05-028</p>
+          <p>¢ 14500</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-29">
+        <img src="img/abrigo-5.png" alt="Cardigan largo tejido con lana de color verde musgo">
+        <p>-25%</p>
+        <figcaption class="carta-texto" id="producto-29">
+          <h4><b>Cardigan Bohemia </b></h4>
+          <p class="codigo">Codigo: 05-029</p>
+          <p><i>¢ 16000</i> ¢ 12000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-30">
+        <img src="img/abrigo-6.png" alt="Blazer color beige con finos botones">
+        <p>Nuevo</p>
+        <figcaption class="carta-texto" id="producto-30">
+          <h4><b>Blazer Valencia</b></h4>
+          <p class="codigo">Codigo: 05-030</p>
+          <p>¢ 18000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- section 6 -->
+    <section class="grid">
+      <h1 class="titulo-caja" id="accesorios">Accesorios</h1>
+      <figure class="carta-producto" aria-labelledby="producto-31">
+        <img src="img/bolso-1.png" alt="bolso de mano color Beige">
+        <figcaption class="carta-texto" id="producto-31">
+          <h4><b>Bolso Rosalía</b></h4>
+          <p class="codigo">Codigo: 06-031</p>
+          <p>¢ 23500</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-32">
+        <img src="img/bolso-2.png" alt="Bolso con faja para hombro color negro">
+        <figcaption class="carta-texto" id="producto-32">
+          <h4><b>Bolso Akaiv </b></h4>
+          <p class="codigo">Codigo: 06-032</p>
+          <p>¢ 29000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-33">
+        <img src="img/bolso-3.png" alt="Bolso de fibra natural de colores blanco y negro">
+        <figcaption class="carta-texto" id="producto-33">
+          <h4><b>Bolso Ambar </b></h4>
+          <p class="codigo">Codigo: 06-033</p>
+          <p>¢ 24000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>  
+      <figure class="carta-producto" aria-labelledby="producto-34">
+        <img src="img/bolso-4.png" alt="Bolso de fibra natural con manillas tejidas">
+        <figcaption class="carta-texto" id="producto-34">
+          <h4><b>Bolso Gap </b></h4>
+          <p class="codigo">Codigo: 06-034</p>
+          <p>¢ 17000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>  
+      <figure class="carta-producto" aria-labelledby="producto-35">
+        <img src="img/gorro-1.png" alt="Gorro de lana color negro con diseño animal print">
+        <p>-20%</p>
+        <figcaption class="carta-texto" id="producto-35">
+          <h4><b>Beannie Animal print</b></h4>
+          <p class="codigo">Codigo: 06-035</p>
+          <p><i>¢ 11000</i> ¢ 8800</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-36">
+        <img src="img/gorro-2.png" alt="Gorro de lana color rosa">
+        <figcaption class="carta-texto" id="producto-36">
+          <h4><b>Beannie Fuzzy </b></h4>
+          <p class="codigo">Codigo: 06-036</p>
+          <p>¢ 11000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-37">
+        <img src="img/coletas-1.png" alt="Cola para el cabello se puede dividir en dos">
+        <p>Nuevo</p>
+        <figcaption class="carta-texto" id="producto-37">
+          <h4><b>Coletas </b></h4>
+          <p class="codigo">Codigo: 06-037</p>
+          <p>¢ 4000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-38">
+        <img src="img/diadema-1.png" alt="Diadema color beige brillante">
+        <figcaption class="carta-texto" id="producto-38">
+          <h4><b>Diadema Alma</b></h4>
+          <p class="codigo">Codigo: 06-038</p>
+          <p>¢ 2000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+      <figure class="carta-producto" aria-labelledby="producto-39">
+        <img src="img/lentes-1.png" alt="Lentes para el sol con proteccon UV">
+        <figcaption class="carta-texto" id="producto-39">
+          <h4><b>Lentes para el sol</b></h4>
+          <p class="codigo">Codigo: 06-039</p>
+          <p>¢ 4000</p>
+          <button role="button" title="Añadir al carrito" onclick="AlertaCarrito()"><i class="fas fa-shopping-cart"></i></button>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="grid">
+    <div class="footer-izquierda">
+        <h1>Menu</h1>
+        <ul role="menubar">
+            <li role="menuitem"><a href="index.html">Inicio</a></li>
+            <li role="menuitem"><a href="catalogo.html">Catalogo</a></li>
+            <li role="menuitem"><a href="novedades.html">Novedades</a></li>
+            <li role="menuitem"><a href="ofertas.html">¡Ofertas!</a></li>
+        </ul>
+    </div>
+    <div class="footer-centro">
+        <h1>Contacto</h1>
+        <a href="" title="facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="" title="twitter"><i class="fab fa-twitter-square"></i></a>
+        <a href="" title="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+        <p>Telefono: 8888-8888</p>
+        <p>Email: ejemplo@email.com</p>
+        <p>Direccion: 100 metros Norte del Banco Nacional de, San José, San Marcos</p>
+    </div>
+    <div class="footer-derecha">
+        <h1>Horario</h1>
+        <p>De Lunes a Sabado <br>9:00 AM a 9:00 PM</p>
+        <br>
+        <p>Domingos <br>9:00 AM a 2:00 PM</p>
+    </div>
+    <div class="copy">
+        <span>© Copyright gerberasboutiquecr.com</span>
+        <span>Designed by</span>
+        <img src="img/logo 1.svg" alt="Logo del desarrollador">
+    </div>
+  </footer>
+<!-- alerts -->
+<script src="js/alertify.js"></script>
+<script src="js/carrito.js"></script>
+<!-- menu -->
+<script src="js/menu.js"></script>
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/192542afc1.js" crossorigin="anonymous"></script>
+</body>
+</html>
